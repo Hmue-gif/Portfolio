@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<div class="website-loader">
+  <div class="loader">Loading...</div>
+</div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../vendor/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../vendor/font/fontawesome/css/all.css">
+  <link rel="stylesheet" href="../vendor/animate_it/animate.css">
+  <link rel="stylesheet" href="../vendor/imagehover.css-master/imagehover.css-master/css/imagehover.css">
+  <link rel="stylesheet" href="../vendor/imagehover.css-master/imagehover.css-master/css/imagehover.min.css">
+  <link rel="stylesheet" href="../vendor/slick/slick.css">
+  <link rel="stylesheet" href="../vendor/slick/slick-theme.css">
+  <style>
+      .loader {
+      color: #76b852;
+      font-size: 20px;
+      margin: 100px auto;
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
+      position: relative;
+      text-indent: -9999em;
+      -webkit-animation: load4 1.3s infinite linear;
+      animation: load4 1.3s infinite linear;
+      -webkit-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+    .website-loader{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+      background-color: #fff;
+      position: fixed;
+      z-index: 2000;
+    }
+@-webkit-keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+@keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <script src="../js/app.js"></script>
+  <script src="../vendor/jquery-3.3.1.min.js"></script>
+  <script src="../vendor/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/counter_up/Counter-Up/jquery.counterup.min.js"></script>
+  <script src="../vendor/way_point/jquery.waypoints.min.js"></script>
+  <script src="../vendor/wow/wow.js"></script>
+  <script src="../vendor/slick/slick.js"></script>
+  <script src="../vendor/slick/slick.min.js"></script>
+
+    <header class="container-fluid m-background" style="position: fixed; top: 0; z-index: 6;">
+      <div class="row">
+          <div class="container">
+              <div class="row">
+                <nav class="navbar hnav navbar-expand-lg navbar-light wow animate__fadeInDown">
+                  <div class="container-fluid">
+                    <a class="navbar-brand fw-bolder text-white" href="#">Portfolio</a>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <i class="fas fa-align-right text-white"></i>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                      <ul class="navbar-nav mb-2 mb-lg-0 d-block d-md-block d-xl-none">
+                        <li class="nav-item w-100">
+                            <a class="nav-link mx-3 text-primary text-uppercase fw-900 text-white my-2" aria-current="page" href="#home"> <i class="fas fa-home me-3 position-relative" style="left: -10px;"></i>Home</a>
+                        </li>
+                        <li class="nav-item">                         
+                          <a class="nav-link mx-3 text-primary text-uppercase fw-900 text-white my-2" href="#about"><i class="fas fa-user me-3 position-relative" style="left: -10px;"></i>About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link mx-3 text-primary text-uppercase fw-900 text-white my-2" href="#education"> <i class="fas fa-user-graduate me-3 position-relative" style="left: -10px;"></i> Education</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link mx-3 text-primary text-uppercase fw-900 text-white my-2" href="#expert"><i class="fas fa-skull me-3 position-relative" style="left: -10px;"></i>Expert</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link mx-3 text-primary text-uppercase fw-900 text-white my-2" href="#skill"><i class="fas fa-industry me-3 position-relative" style="left: -10px;"></i>Skills</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link mx-3 text-primary text-uppercase fw-900 text-white my-2" href="#gallery"><i class="fas fa-photo-video me-3 position-relative" style="left: -10px;"></i>Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link mx-3 text-primary text-uppercase fw-900 text-white my-2" href="#rate"><i class="fas fa-star-half-alt me-3 position-relative" style="left: -10px;"></i>Rating</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link mx-3 text-primary text-uppercase fw-900 text-white my-2" href="#contact"><i class="fas fa-search-location me-3 position-relative" style="left: -10px;"></i>Contact Us</a>
+                        </li>
+                      </ul>
+                      <button class="always border-0 btn btn-white d-none d-lg-none d-md-none d-xl-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-align-right text-white fw-bolder"></i></button>                                         
+                    </div>
+                  </div>
+                </nav>
+              </div>
+          </div>
+      </div>
+    </header>
+
+    <section class="home m-background" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="row d-flex my-2 vh-100 align-items-center">
+                       
+                      <div class="col-12 col-md-6 col-xl-8 mt-5 mb-mt-0 mt-xl-0">
+                          <div class="ms-0 ms-md-5 text-start">
+                              <h4 class="text-uppercase text-white mb-2 fw-bolder wow animate__lightSpeedInLeft delay1">this is me</h4>
+                              <h2 class="fw-bold text-white text-uppercase my-3 wow animate__lightSpeedInLeft delay1 text-decoration-underline fs-2">Hmue Thiha Naung.</h2>
+                              <p class="text-white mb-4  wow animate__lightSpeedInLeft delay2 text-light">trying to be <span>Frontend Web Developer</span> in my future ,<br class="d-none d-md-block d-xl-block">
+                              I'm learning <br class="d-block d-md-none d-xl-none"> <span class="text-decoration-underline fst-italic fw-bold">HTML , Css , Bootstrap , Javascript , Vue and React</span> <br> with the helping of <br><br>
+                              <i class="far fa-hand-point-right text-light" id="home-icon"></i> <span class="fw-bold text-light fst-italic">MMS IT Solution , Creative Coder , Turing Programming Training Center</span></p>
+    
+                              <div class="mb-3 mb-md-none mb-xl-none">
+                                <a href="#skill"><button class="btn btn-outline-light mx-3 wow animate__fadeInLeft delay2">My Skills</button></a>
+                                <a href=""><button class="btn btn-success mx-2 wow animate__fadeInLeft delay3">My Projects</button></a>
+                              </div>
+                          </div>
+
+                          <div class="d-flex hicon text-center text-md-start text-xl-start ms-4 ms-md-0 ms-xl-0 wow animate__bounceIn delay2">
+                              <a href="https://www.facebook.com/hmuethiha.naung">
+                                <i class="fab fa-facebook text-white mx-3"></i>
+                              </a>
+                              <a href="https://www.instragm.com/hmuethihanaung">
+                                <i class="fab fa-instagram text-white mx-3"></i>
+                              </a>
+                              <a href="https://www.gmail.com/hmuethihanaung@gmail.com">
+                                <i class="fas fa-envelope-square text-white mx-3"></i>
+                              </a>
+                              <a href="https://github.com/Hmue-gif">
+                                <i class="fab fa-git-square text-white mx-3"></i>
+                              </a>
+                          </div>
+
+                          <div class="mouse-icon text-center w-100">                          
+                                <a href="#about">
+                                  <div class="">
+                                    <i class="fas fa-mouse mouse text-light fa-1x wow"></i>
+                                  </div>
+                                </a>
+                          </div>
+                  
+                      </div>
+
+                      <div class="col-12 col-md-6 col-xl-4 d-none d-md-block d-xl-block">               
+                         <div class="text-center">   
+                            <figure class="imghvr-shutter-in-out-horiz wow animate__lightSpeedInRight delay1">
+                                <img src="../data/img3.jpg" alt="example-image" style="width: 300px;height: 300px;">
+                                <figcaption>
+                                  <h3 class="ih-fade-down ih-delay-sm ">Hmue Thiha Naung</h3><br>
+                                  <p class="ih-zoom-in ih-delay-md">
+                                    <i>"I have the simplest tastes, I am always satisfied with the best."</i>
+                                  </p>
+                                </figcaption>   
+                            </figure>
+                         </div>
+                      </div>      
+
+                    </div>            
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about" style="background-image: url('../data/bg-3.svg');">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="row my-2 justify-content-center">
+                        <div class="col-12">
+                          <h2 class="abt-txt fw-bold text-center text-success my-3 wow animate__lightSpeedInRight delay1">
+                            About Me
+                          </h2>
+
+                          <div class="text-center">
+                             <i class="fas fa-ellipsis-h text-success fs-6 wow animate__lightSpeedInRight delay1" style="position: relative; top: -15px;"></i>
+                          </div>
+                          
+                          <div class="text-center my-3">
+                            <img src="../data/img6.jpg" class="abt-img wow animate__fadeIn delay2" alt="" style="width: 120px; height: 120px; border-radius: 50%; filter: contrast(1.2px);">
+                          </div>
+
+                          <div class="my-3">     
+                              <p class="text-center wow animate__lightSpeedInRight delay2">
+                              <i class="fas fa-quote-left fa-1x text-success" style="position: relative; top: -10px;"></i> Hey there ! I'm Hmue, a 20 year of software enginnering student at the Computer University Mandalay, Myanmar.</p> 
+                              <p class="text-center wow animate__lightSpeedInLeft delay3">I found my passion for code during these covid when i started learning design course . </p>
+                              <p class="text-center wow animate__lightSpeedInLeft delay3">
+                                I love learning web design and creating website , blogging on the <span class="fst-italic text-success fw-bold">four website</span> I developed.
+                              </p>
+                          </div>
+
+                          <div class="text-center mt-4">
+                            <a href="#about"><button class="btn btn-success p-2  wow animate__lightSpeedInLeft delay3 mb-5" >Download CV</button></a>
+                          </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education m-background" id="education">
+      <div class="container">
+          <div class="row my-2">
+            <h2 class="fw-bold my-2 text-center text-white my-3 wow animate__lightSpeedInLeft delay1">Education</h2>
+
+            <div class="text-center">
+              <i class="fas fa-ellipsis-h text-white fs-6 wow animate__lightSpeedInRight delay1" style="position: relative; top: -15px;"></i>
+            </div>
+
+            <div class="col-12 col-md-5 col-xl-5 text-start text-md-end text-xl-end wow animate__lightSpeedInRight delay2">
+                  <h4 class="fs-5 text-white fw-bold">Computer University</h4>
+                  <h3 class="fs-2 text-white fw-bolder">Software Engineering</h3>
+                  <p class="text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat aut quo voluptas iusto! Natus nam perspiciatis eos alias iusto, quis neque illum magni recusandae cupiditate nesciunt! Dicta soluta necessitatibus quam!</p>
+            </div>
+
+            <div class="col-2 d-none d-md-block d-xl-block" style="height: 110px; width: 110px; background-color: #b1f9b3;border-radius: 20%; margin: auto;">
+                <div class="text-center">
+                   <p>2018</p>
+                   <p>|</p>
+                   <p>2020</p>
+                </div>
+            </div>
+
+            <div class="col-5">
+
+            </div>
+          </div><hr class="d-block d-md-none d-xl-none">
+
+
+          <div class="row">
+            <div class="col-5">
+               
+            </div>
+            <div class="col-2 d-none d-md-block d-xl-block" style="height: 110px; width: 110px; background-color: #b1f9b3;border-radius: 20%; margin: auto;">
+              <div class="text-center">
+                 <p>2020</p>
+                 <p>|</p>
+                 <p>2021</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-5 col-xl-5 text-start text-md-start text-xl-start wow animate__lightSpeedInLeft delay2">
+              <h4 class="fs-5 text-white fw-bold">MMS IT Online Course</h4>
+              <h3 class="fs-2 text-white fw-bolder">Website Design</h3>
+              <p class="text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat aut quo voluptas iusto! Natus nam perspiciatis eos alias iusto, quis neque illum magni recusandae cupiditate nesciunt! Dicta soluta necessitatibus quam!</p>
+            </div>
+          </div><hr class="d-block d-md-none d-xl-none">
+
+          <div class="row">
+            <div class="col-12 col-md-5 col-xl-5 text-start text-md-start text-xl-start wow animate__lightSpeedInRight delay2">
+                <h4 class="fs-5 text-white fw-bold">Creative Coders Online Course</h4>
+                <h3 class="fs-2 text-white fw-bolder">Javascript,Vue Js</h3>
+                <p class="text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat aut quo voluptas iusto! Natus nam perspiciatis eos alias iusto, quis neque illum magni recusandae cupiditate nesciunt! Dicta soluta necessitatibus quam!</p>
+            </div>
+            <div class="col-2 d-none d-md-block d-xl-block" style="height: 110px; width: 110px; background-color: #b1f9b3;border-radius: 20%;margin: auto;">
+                 <div class="text-center">
+                    <p class="mt-5">3 Months</p>
+                 </div>
+            </div>
+            <div class="col-5">
+              
+            </div>
+          </div><hr class="d-block d-md-none d-xl-none">
+      </div>
+    </section>
+
+    <section class="expert" id="expert" style="background-image: url('../data/bg-2.svg');">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="row my-2">   
+                        <h2 class="fw-bold my-2 text-center text-success my-3 wow animate__lightSpeedInLeft delay1">Expert In</h2>
+
+                        <div class="text-center">
+                          <i class="fas fa-ellipsis-h text-success fs-6 wow animate__lightSpeedInRight delay1" style="position: relative; top: -15px;"></i>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-xl-4 my-3 text-center wow animate__zoomIn delay-2">
+                            <div class="h-50">
+                                <div class="text-center my-3">
+                                  <i class="fas fa-desktop fa-2x text-dark text-center my-2 p-2" style="border-radius:  20px; border: 2px solid #8DC26F;"></i>
+                                </div>
+                                <h4 class="text-uppercase text-center my-2 text-success my-3">Mobile app design <br><span class="text-success fw-bolder fs-1">___</span></h4>
+                                <p class="text-dark lh-lg">                                 
+                                    It is not becuse things are <br class="d-block d-md-none d-xl-block"> difficult that we don not dare; it is <br class="d-block d-md-none d-xl-block"> because we do not dare that they <br class="d-block d-md-none d-xl-block"> are difficulf
+                                    <i class="fas fa-quote-right text-success position-relative ms-2" style="top: -5px;"></i>
+                                </p>                  
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-xl-4 my-3 text-center wow animate__zoomIn delay-2">
+                          <div class="h-50">
+                              <div class="text-center my-3">
+                                <i class="fas fa-wrench fa-2x text-dark text-center my-2 p-2" style="border-radius:  20px; border: 2px solid #8DC26F;"></i>
+                              </div>
+                              <h4 class="text-uppercase text-center my-2 text-success">web design <br><span class="text-success fw-bolder fs-1">___</span></h4>
+                              <p class="text-dark lh-lg">
+                                  If you are an entrepreneur, you know that <br class="d-block d-md-none d-xl-block"> your success cannot depend on the <br class="d-block d-md-none d-xl-block"> opinions of others Like the wind,<br class="d-block d-md-none d-xl-block"> opinions
+                                  <i class="fas fa-quote-right text-success position-relative ms-2" style="top: -5px;"></i>
+                              </p>   
+                          </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-xl-4 my-3 text-center wow animate__zoomIn delay-2">
+                          <div class="h-50">
+                              <div class="text-center my-3">
+                                <i class="fas fa-laptop-code fa-2x text-dark text-center my-2 p-2" style="border-radius:  20px; border: 2px solid #8DC26F;"></i>
+                              </div>
+                              <h4 class="text-uppercase text-center my-2 text-success">web development <br><span class="text-success fw-bolder fs-1">___</span></h4>
+                              <p class="text-dark lh-lg">
+                                  Do you want to be even more successful?<br class="d-block d-md-none d-xl-block">Learn to love learning and growth . The<br class="d-block d-md-none d-xl-block">more effort you put into improving your <br class="d-block d-md-none d-xl-block">skills
+                                  <i class="fas fa-quote-right text-success position-relative ms-2" style="top: -5px;"></i>
+                              </p>
+                              
+                          </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-xl-4 my-3 text-center wow animate__zoomIn delay-3">
+                          <div class="h-50">
+                              <div class="text-center my-3">
+                                <i class="fab fa-fantasy-flight-games fa-2x text-dark text-center my-2 p-2" style="border-radius:  20px; border: 2px solid #8DC26F;"></i>
+                              </div>
+                              <h4 class="text-uppercase text-center my-2 text-success">Ai tools <br><span class="text-success fw-bolder fs-1">___</span></h4>
+                              <p class="text-dark lh-lg">
+                                  Hypnosis quir smoking methods maintain<br class="d-block d-md-none d-xl-block"> caused quite a stir in the medical world <br class="d-block d-md-none d-xl-block"> over the last two decades. There is a lot of<br class="d-block d-md-none d-xl-block"> argument
+                                  <i class="fas fa-quote-right text-success position-relative ms-2" style="top: -5px;"></i>
+                              </p>
+                              
+                          </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-xl-4 my-3 text-center wow animate__zoomIn delay-3">
+                          <div class="h-50">
+                              <div class="text-center my-3">
+                                <i class="fab fa-vuejs fa-2x text-dark text-center my-2 p-2" style="border-radius:  20px; border: 2px solid #8DC26F;"></i>
+                              </div>
+                              <h4 class="text-uppercase text-center my-2 text-success">vue <br><span class="text-success fw-bolder fs-1">___</span></h4>
+                              <p class="text-dark lh-lg">
+                                  Do you sometimes have the feeling that <br class="d-block d-md-none d-xl-block">you're runing into the same obstacieds <br class="d-block d-md-none d-xl-block">over and over again?Many if ny<br class="d-block d-md-none d-xl-block"> conflicts
+                                  <i class="fas fa-quote-right text-success position-relative ms-2" style="top: -5px;"></i>
+                              </p>
+                              
+                          </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-xl-4 my-3 text-center wow animate__zoomIn delay-3">
+                          <div class="h-50">
+                              <div class="text-center my-3">
+                                <i class="fab fa-react fa-2x text-dark text-center my-2 p-2" style="border-radius:  20px; border: 2px solid #8DC26F;"></i>
+                              </div>
+                              <h4 class="text-uppercase text-center my-2 text-success">react <br><span class="text-success fw-bolder fs-1">___</span></h4>
+                              <p class="text-dark lh-lg">
+                                  You've heard the expression, "Just believe <br class="d-block d-md-none d-xl-block">it and it will come."."Well,technically, that<br class="d-block d-md-none d-xl-block"> is true,however , believing  is not just <br class="d-block d-md-none d-xl-block"> thinking that
+                                  <i class="fas fa-quote-right text-success position-relative ms-2" style="top: -5px;"></i>
+                              </p>
+                              
+                          </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skill my-4 p-3" id="skill" style="background-color: #80c683; border-top-right-radius: 60px;border-top-left-radius: 60px;border-bottom-right-radius: 60px;border-bottom-left-radius: 60px;">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="container">
+              <h2 class="fw-bold my-2 text-center text-white my-3 wow animate__lightSpeedInLeft delay1">Skills</h2>
+
+              <div class="text-center">
+                <i class="fas fa-ellipsis-h text-white fs-6 wow animate__lightSpeedInRight delay1" style="position: relative; top: -15px;"></i>
+              </div>
+                <div class="row my-2 align-items-center justify-content-center">
+                    <div class="col-12 col-md-12 col-xl-6 wow animate__backInLeft delay2">
+                        <div class="p-5" style="border-radius: 20px; background-color: #b1f9b3;">
+                            <h4 class="fw-bold text-dark my-3">       
+                               Nam ultices  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quos error quia culpa ut omnis commodi reiciendis quibusdam, ratione iure qui aliquam quisquam ad mollitia quae libero itaque suscipit. Veniam.
+                            </h4>
+
+                            <p class="text-dark mt-3 d-none d-md-block d-xl-block">
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, eos! Necessitatibus hic alias numquam, sequi ea maxime adipisci provident ipsam tempora reprehenderit perferendis, veritatis rem accusantium labore cum architecto ipsum! <br>
+                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. A eligendi assumenda eum reprehenderit beatae consequuntur, excepturi cum natus placeat rerum, voluptate sint omnis delectus! Incidunt porro ratione unde id blanditiis! <br>
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo quis facere enim minus optio architecto fugiat molestiae omnis distinctio. Provident magnam eligendi rem quaerat itaque excepturi fuga, nesciunt illum voluptatum!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-12 col-xl-6 wow animate__backInRight delay2">
+                      <h3 class="text-center text-white my-3">My Skills</h3>
+                      <div class="my-2">           
+                          <p class="text-white">
+                            Html5
+                            <i class="fab fa-html5"></i>
+                          </p> 
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                <p class="mt-3 text-white"><span class="count">80</span>%  </p> 
+                              </div>
+                          </div>   
+                      </div>
+
+                      <div class="my-2">   
+                        <p class="text-white">
+                          Css
+                          <i class="fab fa-css3"></i>
+                        </p>          
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                              <p class="mt-3 text-white"><span class="count">70</span>%  </p> 
+                            </div>
+                        </div>   
+                      </div>
+
+                      <div class="my-2"> 
+                        <p class="text-white">
+                          Bootstrap
+                          <i class="fab fa-bootstrap"></i>
+                        </p>                  
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                              <p class="mt-3 text-white"><span class="count">65</span>%  </p> 
+                            </div>
+                        </div>   
+                      </div>
+
+                      <div class="my-2">
+                        <p class="text-white">
+                          Javascript
+                          <i class="fab fa-js-square"></i>
+                        </p>                 
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                              <p class="mt-3 text-white"><span class="count">60</span>%  </p> 
+                            </div>
+                        </div>   
+                      </div>
+
+                     
+
+                      <div class="my-2"> 
+                        <p class="text-white">
+                          Vue
+                          <i class="fab fa-vuejs"></i>
+                        </p>                
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                              <p class="mt-3 text-white"><span class="count">50</span>%  </p> 
+                            </div>
+                        </div>   
+                      </div>
+
+                      <div class="my-2">        
+                        <p class="text-white">
+                          React
+                          <i class="fab fa-react"></i>
+                        </p>           
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                              <p class="mt-3 text-white"><span class="count">40</span>%  </p> 
+                            </div>
+                        </div>   
+                      </div>                     
+                    </div>
+            </div>
+            </div>
+      </div>
+    </section>
+
+    <section class="gallery" style="background-image: url('../data/bg-3.svg'); opacity: 0.7;" id="gallery">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="container">
+                <h2 class="fw-bold my-2 text-center text-success my-3 wow animate__lightSpeedInLeft delay1">Gallery</h2>
+
+                <div class="text-center">
+                  <i class="fas fa-ellipsis-h text-success fs-6 wow animate__lightSpeedInRight delay1" style="position: relative; top: -15px;"></i>
+                </div>
+
+                  <div class="row">
+                      <div class="col-6 col-md-4 col-xl-4 my-3 wow animate__rotateInDownLeft delay2">
+                          <div class="">
+                            <figure class="imghvr-shutter-out-diag-2">
+                              <img src="../data/mms.png" alt="example-image">
+
+                              <figcaption>
+                                <h3 class="ih-fade-down ih-delay-sm ">MMS IT Project</h3><br>
+                                <p class="ih-zoom-in ih-delay-md">
+                                  <i>"I have the simplest tastes, I am always satisfied with the best."</i>
+                                </p>
+                              </figcaption>
+                              
+                            </figure>
+                          </div>
+                      </div>
+
+                      <div class="col-6 col-md-4 col-xl-4 my-3 wow animate__rotateInDownRight delay2">
+                        <div class="">
+                          <figure class="imghvr-hinge-up">
+                            <img src="../data/res.png" alt="example-image">
+
+                            <figcaption>
+                              <h3 class="ih-fade-down ih-delay-sm ">Responsive Website</h3><br>
+                              <p class="ih-zoom-in ih-delay-md">
+                                <i>"I have the simplest tastes, I am always satisfied with the best."</i>
+                              </p>
+                            </figcaption>
+                            
+                          </figure>
+                        </div>
+                      </div>
+
+                      <div class="col-6 col-md-4 col-xl-4 my-3 wow animate__rotateInDownLeft delay2">
+                      <div class="">
+                        <figure class="imghvr-hinge-left">
+                          <img src="../data/static.png" alt="example-image">
+
+                          <figcaption>
+                            <h3 class="ih-fade-down ih-delay-sm ">Static Website</h3><br>
+                            <p class="ih-zoom-in ih-delay-md">
+                              <i>"I have the simplest tastes, I am always satisfied with the best."</i>
+                            </p>
+                          </figcaption>
+                          
+                        </figure>
+                          </div>
+                      </div>
+
+                      <div class="col-6 col-md-4 col-xl-4 my-3 wow animate__rotateInDownRight delay2">
+                        <div class="">
+                          <figure class="imghvr-shutter-out-vert">
+                            <img src="../data/cal.png" alt="example-image">
+
+                            <figcaption>
+                              <h3 class="ih-fade-down ih-delay-sm ">Calculator</h3><br>
+                              <p class="ih-zoom-in ih-delay-md">
+                                <i>"I have the simplest tastes, I am always satisfied with the best."</i>
+                              </p>
+                            </figcaption>
+                            
+                          </figure>
+                        </div>
+                      </div>
+
+                      <div class="col-6 col-md-4 col-xl-4 my-3 wow animate__rotateInDownLeft delay2">
+                        <div class="">
+                          <figure class="imghvr-zoom-out-down">
+                            <img src="../data/guess.png" alt="example-image">
+
+                            <figcaption>
+                              <h3 class="ih-fade-down ih-delay-sm ">Guess Game</h3><br>
+                              <p class="ih-zoom-in ih-delay-md">
+                                <i>"I have the simplest tastes, I am always satisfied with the best."</i>
+                              </p>
+                            </figcaption>
+                            
+                          </figure>
+                        </div>
+                      </div>
+
+                      <div class="col-6 col-md-4 col-xl-4 my-3 wow animate__rotateInDownRight delay2">
+                        <div class="">
+                          <figure class="imghvr-zoom-out-flip-vert">
+                            <img src="../data/vue.png" alt="example-image">
+
+                            <figcaption>
+                              <h3 class="ih-fade-down ih-delay-sm ">Vue Project</h3><br>
+                              <p class="ih-zoom-in ih-delay-md">
+                                <i>"I have the simplest tastes, I am always satisfied with the best."</i>
+                              </p>
+                            </figcaption>
+                            
+                          </figure>
+                        </div>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="rate m-background" id="rate">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <h2 class="fw-bold my-2 text-center text-white my-3 wow animate__lightSpeedInLeft delay1">Ratings</h2>
+
+                    <div class="text-center">
+                      <i class="fas fa-ellipsis-h text-white fs-6 wow animate__lightSpeedInRight delay1" style="position: relative; top: -15px;"></i>
+                    </div>
+                    <div class="row mb-4 ms-4 align-items-center">
+
+                       <div class="col-12 col-md-6 my-3 col-xl-3 wow animate__zoomIn delay2">
+                          <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                  <div class="d-flex justify-content-start align-items-center my-3">
+                                    <img src="../data/img5.jpg" style="width: 50px; height: 50px; border-radius: 50%;" alt="">
+                                    <h4 class="ms-4 fw-bold text-success fs-6">Hmue Thiha Naung</h4>
+                                  </div>
+                                  <i class="fas fa-quote-left text-success text-left"></i>
+                                  <p class="card-text text-left text-dark">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, sit. Quibusdam molestias illo, minima doloremque mollitia ut
+                                  </p>
+                                <div>
+                                  <a href="#"><i class="fas fa-star text-warning"></i></a>
+                                  <a href="#"><i class="fas fa-star text-warning"></i></a>
+                                  <a href="#"><i class="fas fa-star text-warning"></i></a>
+                                </div>
+                            </div>
+                          </div>
+                       </div>
+
+                       <div class="col-12 col-md-6 my-3 col-xl-3 wow animate__zoomIn delay2">
+                        <div class="card" style="width: 18rem;">
+                          <div class="card-body">
+                                <div class="d-flex justify-content-start align-items-center my-3">
+                                  <img src="../data/img5.jpg" style="width: 50px; height: 50px; border-radius: 50%;" alt="">
+                                  <h4 class="ms-4 fw-bold text-success fs-6">Hmue Thiha Naung</h4>
+                                </div>
+                                <i class="fas fa-quote-left text-success text-left"></i>
+                                <p class="card-text text-left text-dark">
+                                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, sit. Quibusdam molestias illo, minima doloremque mollitia ut
+                                </p>
+                              <div>
+                                <a href="#"><i class="fas fa-star text-warning"></i></a>
+                                <a href="#"><i class="fas fa-star text-warning"></i></a>
+                              </div>
+                          </div>
+                        </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 my-3 col-xl-3 wow animate__zoomIn delay2">
+                          <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                  <div class="d-flex justify-content-start align-items-center my-3">
+                                    <img src="../data/img5.jpg" style="width: 50px; height: 50px; border-radius: 50%;" alt="">
+                                    <h4 class="ms-4 fw-bold text-success fs-6">Hmue Thiha Naung</h4>
+                                  </div>
+                                  <i class="fas fa-quote-left text-success text-left"></i>
+                                  <p class="card-text text-left text-dark">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, sit. Quibusdam molestias illo, minima doloremque mollitia ut
+                                  </p>
+                                <div>
+                                  <a href="#"><i class="fas fa-star text-warning"></i></a>
+                                  <a href="#"><i class="fas fa-star text-warning"></i></a>
+                                  <a href="#"><i class="fas fa-star text-warning"></i></a>
+                                  <a href="#"><i class="fas fa-star text-warning"></i></a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 my-3 col-xl-3 wow animate__zoomIn delay2">
+                          <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                  <div class="d-flex justify-content-start align-items-center my-3">
+                                    <img src="../data/img5.jpg" style="width: 50px; height: 50px; border-radius: 50%;" alt="">
+                                    <h4 class="ms-4 fw-bold text-success fs-6">Hmue Thiha Naung</h4>
+                                  </div>
+                                  <i class="fas fa-quote-left text-success text-left"></i>
+                                  <p class="card-text text-left text-dark">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, sit. Quibusdam molestias illo, minima doloremque mollitia ut
+                                  </p>
+                                <div>
+                                  <a href="#"><i class="fas fa-star text-warning"></i></a>
+                                  <a href="#"><i class="fas fa-star text-warning"></i></a>
+                                  <a href="#"><i class="fas fa-star text-warning"></i></a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fun-fact position-relative" style="top: 50px; border: 1px;">  
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="container">
+                      <div class="row w-75 m-auto bg-white justify-content-center p-3" style="border: 3px solid #fff; border-bottom-color: #b2fab4;">
+                        <h3 class="text-success text-center">Current Projects</h3>
+
+                        <div class="text-center">
+                          <i class="fas fa-ellipsis-h text-success fs-6 wow animate__lightSpeedInRight delay1" style="position: relative; top: -15px;"></i>
+                        </div>
+
+                          <div class="col-12 col-md-6 col-xl-3">
+                            <p class="text-center"><span class="count fs-1 text-success">8</span></p>
+                            <p class="text-center fw-bold text-success fst-italic s2">Website</p>
+                          </div>
+
+                          <div class="col-12 col-md-6 col-xl-3">
+                            <p class="text-center"><span class="count fs-1 text-success">4</span></p>
+                            <p class="text-center fw-bold text-success fst-italic s2">Vue</p>
+                          </div>
+
+                          <div class="col-12 col-md-6 col-xl-3">
+                            <p class="text-center"><span class="count fs-1 text-success">3</span></p>
+                            <p class="text-center fw-bold text-success fst-italic s2">Javascript</p>
+                          </div>
+
+                          <div class="col-12 col-md-6 col-xl-3">
+                            <p class="text-center"><span class="count fs-1 text-success">1</span></p>
+                            <p class="text-center fw-bold text-success fst-italic s2">React</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        
+    </section>
+
+    <section class="container-fluid contact" id="contact" style="background: #c2e59c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ">
+      <div class="row">
+          <div class="container">
+              <div class="row w-100 m-auto justify-content-center py-5">
+                    <div class="col-12">
+                      <div class="my-5 text-center">
+                          <p class="text-white">Contact Us</p>
+                          <h4 class="text-uppercase text-white font-weight-bolder">Get In Touch With Us</h4>
+                      </div>
+                    </div>
+
+
+                      <div class="col-12 col-md-4 col-xl-4">
+                        <div class="ms-0 ms-md-5 ms-xl-5 text-center my-3">
+                          <i class="fas fa-map text-white fw-bolder mb-3"></i>
+                          <p class="text-white-50">73*74 / 3 Street </p>
+                          <p class="text-white-50">Mandalay</p>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-4 col-xl-4">
+                        <div class="text-center my-3">
+                          <i class="fas fa-envelope text-white fw-bolder mb-3"></i>
+                          <p class="text-white-50">hmuethihanaung@gmail.com</p>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-4 col-xl-4">
+                          <div class="text-center my-3">
+                            <i class="fas fa-phone text-white fw-bolder mb-3"></i>
+                            <p class="text-white-50">+959 973 225 218</p>
+                          </div>
+                      </div>
+
+
+                  <div class="col-12 col-md-6 col-xl-6">
+                            <form action="#">
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                            </form>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-xl-6">
+                    <form action="#">
+                      <div class="form-group mb-3">
+                        <input type="text" class="form-control" placeholder="Email">
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="col-12">
+                    <form action="#">
+                        <div class="form-group mb-3">
+                          <textarea type="text" class="form-control" rows="5" placeholder="Message"></textarea>
+                        </div>
+                        <div class="text-center my-4">
+                          <button class="btn btn-outline-secondary">Send Message</button>
+                        </div>
+                    </form>
+                  </div>
+
+                  <div class="text-center">
+                     <a href="https://www.facebook.com/hmuethiha.naung"><i class="fab fa-facebook mx-4 text-white"></i></a>
+                     <a href="https://www.instragm.com/hmuethihanaung"><i class="fab fa-instagram mx-4 text-white"></i></a>
+                     <a href="https://www.gmail.com/hmuethihanaung@gmail.com"><i class="fas fa-envelope mx-4 text-white"></i></a>
+                     <a href="https://github.com/Hmue-gif"><i class="fab fa-github mx-4 text-white"></i></a>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+    </section>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <a class="navbar-brand fw-bolder text-primary" href="#">Portfolio</a>
+          <button type="button" class="btn-close text-reset text-white-50" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <nav class="nav flex-column d-flex justify-content-center">
+              <a class="nav-link mx-3 text-white text-uppercase fw-900" aria-current="page" href="#home">
+                <i class="fas fa-home me-4 my-3"></i> Home
+              </a>
+              <a class="nav-link mx-3 text-white text-uppercase fw-900" aria-current="page" href="#about">
+                <i class="fas fa-user me-4 my-3"></i> About
+              </a>
+              <a class="nav-link mx-3 text-white text-uppercase fw-900" aria-current="page" href="#education">
+                <i class="fas fa-user me-4 my-3"></i> Education
+              </a>
+              <a class="nav-link mx-3 text-white text-uppercase fw-900" aria-current="page" href="#expert">
+                <i class="fas fa-skull me-4 my-3"></i> Expert
+              </a>
+              <a class="nav-link mx-3 text-white text-uppercase fw-900" aria-current="page" href="#skill">
+                <i class="fas fa-skull me-4 my-3"></i> Skills
+              </a>
+              <a class="nav-link mx-3 text-white text-uppercase fw-900" aria-current="page" href="#gallery">
+                <i class="fas fa-skull me-4 my-3"></i> Gallery
+              </a>
+              <a class="nav-link mx-3 text-white text-uppercase fw-900" aria-current="page" href="#rate">
+                <i class="fas fa-briefcase me-4 my-3"></i> Rating
+              </a>
+              <a class="nav-link mx-3 text-white text-uppercase fw-900" aria-current="page" href="#contact">
+                <i class="fas fa-map-marked-alt me-4 my-3"></i> Contact 
+              </a>
+            </nav>
+        </div>
+    </div>
+
+    <div>
+       <a href="#home "><i class="fas fa-hand-pointer fa-1x wow animate__bounce" style="position: fixed;bottom: 10px;right: 2px; width: 40px; height: 40px;color: #779764;animation-iteration-count: infinite;"></i></a>
+    </div>
+   
+
+
+    <script>
+      $(window).on("load",function(){
+        $(".website-loader").fadeOut(500,()=>{
+          $(this).remove()
+        })
+      })
+
+               
+                 wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animate__animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();     
+                    
+                    $('.count').counterUp({
+                        delay: 10,
+                        time: 1000
+                    });
+
+ 
+                   
+
+                    let screenHeight = $(window).height();
+                    console.log(screenHeight);
+
+                    $(window).scroll(function(){
+                      let currentHeight = $(window).scrollTop();
+                      console.log(currentHeight);
+
+                      if(currentHeight > screenHeight-100){
+                          $(".site-nav").addClass(site-nav-link)
+                      }else{
+                          $(".site-nav").removeClass(site-nav-link)
+                      }
+                    })
+
+                    function dark(){
+                      let el = document.getElementById("home")
+                      el.addClass("dark-mode")
+                    }
+
+                 
+                  
+    </script>
+ 
+</body>
+</html>

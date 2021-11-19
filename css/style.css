@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    position: relative;
+}
+
+.always{
+    position: fixed;
+    top: 10px;
+    z-index: 5;
+}
+
+.rotate{
+    border: 4px solid #1a1e21;
+    border-top-color: brown;
+    border-bottom-color: red;
+    border-left-color: blue;
+    border-right-color: black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    animation: spin 0.5s infinite linear;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* .back{
+    background-image: url("../data/b2.avif");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}   */
+
+html{
+    scroll-behavior: smooth;
+    transition: 1s;
+}
+
+.home{
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+    bottom: 40px;
+    left: 70px;
+}
+
+.abt-txt:hover{
+    transform: skew(12deg);
+}
+
+.abt-img:hover{
+    filter: contrast(1.4px);
+    transition: 1s;
+}
+
+.about-img{
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    border: 2px solid #1a1e21; 
+    border-bottom-color: aquamarine; 
+    border-left-color: greenyellow; 
+    border-top-color: aquamarine; 
+    border-right-color: tomato; 
+    animation: spin infinite linear;
+}
+@keyframes spin{
+    from{
+        transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.card:hover{
+    border: 1px solid #1a1e21;
+}
+
+
+
+.mouse-icon{
+    position: absolute;
+    bottom: 10px;
+}
+
+.effect:hover{
+    transform: scale(0.8);
+    transition: 1.5s;
+}
+.home-nav{
+    position: fixed;
+    top: 0;
+    background-color: red;
+    box-shadow: 0 0 3px black;
+    animation: toShow 0.5s linear;
+}
+
+.hicon{
+    position: relative;
+    left: 50px;
+    top: 40px;
+}
+
+.dark-mode{
+    background-color: black;
+}
+
+#home-icon:hover{
+    transform: scale(1.5);
+}
+
+
+
+
+.footer{
+    background-image: url("../data/footer-2.svg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 220px;
+}
+
+.m-background{
+    background: #76b852;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+
+}
+
+.e-background{
+    background-image: url(../data/b3.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    /* opacity: 0.5; */
+}
+
+@keyframes toShow{
+    from{
+        transform: translateY(-200px);
+    }to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes runObj{
+   from{
+       transform: scale(0);
+   }to{
+       transform: scale(1.2);
+   }
+}
+
+.delay1{
+    animation-delay: 0.5;
+}
+
+.delay2{
+    animation-delay: 1s;
+}
+
+.delay3{
+    animation-delay: 1.5s;
+}
+
+.delay4{
+    animation-delay: 2s;
+}
+
+@media screen and (max-width : 440px) {
+    .hnav{
+        position: fixed;
+        top: 0;
+        z-index: 5;
+    }
+    .icon{
+        position: absolute;
+        top: 80px;
+        left: 180px;
+    }
+    .pview{
+        margin-right: 20px;
+        width: 16px;
+        height: 16px;
+    }
+    .mouse-icon{
+        display: none;
+    }
+
+    .footer{
+        padding-top: 300px;
+        background-size: cover;
+        background-position:right;
+    }
+    /* .run{
+        animation: runObj 1s infinite alternate;
+    } */
+
+    
+}
+
+@media screen and (max-width : 380px) {
+    .icon{
+        position: absolute;
+        top: 40px;
+        left: 120px;
+    }
+    .hnav{
+        position: fixed;
+        top: 0;
+        z-index: 5;
+    }
+}
+
