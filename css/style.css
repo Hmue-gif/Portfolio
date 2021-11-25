@@ -54,6 +54,15 @@ html{
     transition: 1s;
 }
 
+#dicon{
+    cursor: pointer;
+}
+
+.dark-mode{
+    background-color: #000;
+    color: #fff;
+}
+
 .home{
     position: relative;
 }
@@ -96,13 +105,6 @@ html{
     border: 1px solid #1a1e21;
 }
 
-
-
-.mouse-icon{
-    position: absolute;
-    bottom: 10px;
-}
-
 .effect:hover{
     transform: scale(0.8);
     transition: 1.5s;
@@ -123,6 +125,7 @@ html{
 
 .dark-mode{
     background-color: black;
+    opacity: 0.85;
 }
 
 #home-icon:hover{
@@ -204,14 +207,16 @@ html{
         width: 16px;
         height: 16px;
     }
-    .mouse-icon{
-        display: none;
-    }
-
     .footer{
         padding-top: 300px;
         background-size: cover;
         background-position:right;
+    }
+    .education{
+        border-radius: 20px;
+    }
+    .rate{
+        border-radius: 20px;
     }
     /* .run{
         animation: runObj 1s infinite alternate;
@@ -230,6 +235,12 @@ html{
         position: fixed;
         top: 0;
         z-index: 5;
+    }
+    .education{
+        border-radius: 20px;
+    }
+    .rate{
+        border-radius: 20px;
     }
 }
 
